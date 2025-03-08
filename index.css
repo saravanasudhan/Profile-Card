@@ -1,0 +1,71 @@
+  *{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    perspective: 1000px; 
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(5deg); 
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+}
+#profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#profile:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+.card h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons a {
+    display: inline-block; 
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(32, 133, 201);
+    border-radius: 50%;
+    position: relative;
+}
+
